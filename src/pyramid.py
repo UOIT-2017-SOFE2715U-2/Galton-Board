@@ -46,8 +46,6 @@ class Pyramid:
         for i in xrange(1, levels):
             upper_level_left_most = self.add_level(upper_level_left_most)
 
-
-
     def add_level(self, upper_level_left_most):
         # levels start from 0
         # index of nodes starts from 0
@@ -87,5 +85,5 @@ class Pyramid:
         # levels = total number of levels
         for l in xrange(0, self.__levels - 1):
             node = self.random_next(node)
-            index = node.get_index()
+        index = node.get_index()
         return index

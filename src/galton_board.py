@@ -11,11 +11,11 @@ class GaltonBoard():
 
 
 
-    def __init__(self,levels = 13):
+    def __init__(self,levels):
         self.__queue = []
      #   self.__levels = levels
      #   self.__marbles = 0
-        self.__pyramid = Pyramid(levels + 1)
+        self.__pyramid = Pyramid(levels)
 
     def fill(self, marbles):
         self.__queue = []
